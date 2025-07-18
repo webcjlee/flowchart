@@ -10,4 +10,3 @@ flowchart TD
     F --> I[Increment n by 1]
     H --> I
     I --> C
-```
