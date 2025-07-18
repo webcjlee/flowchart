@@ -1,10 +1,13 @@
+```mermaid
 flowchart TD
-   A[Start Game] --> B[Display Question]
-   B --> C[Get User Answer]
-   C --> D{Is Answer Correct?}
-   D -- Yes --> E[Update Score]
-   D -- No --> F[Show Correct Answer]
-   E --> G{More Questions?}
-   F --> G
-   G -- Yes --> B
-   G -- No --> H[End Game]
+    A[Start] --> B[Initialize n = 2]
+    B --> C{Is n < 100?}
+    C -- No --> G[End]
+    C -- Yes --> D[Check if n is prime]
+    D --> E{Is n prime?}
+    E -- Yes --> F[Print n]
+    E -- No --> H[Do nothing]
+    F --> I[Increment n by 1]
+    H --> I
+    I --> C
+```
