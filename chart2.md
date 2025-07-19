@@ -11,6 +11,6 @@ line6 --> A
     D --> E{Is n prime?}
     E -- Yes --> F[Print n]
     E -- No --> H[Do nothing]
-    F --> I[Increment n by 1]
     H --> I
+    F --> I[Increment n by 1]
     I --> C
