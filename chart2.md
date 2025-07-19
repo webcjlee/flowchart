@@ -2,8 +2,8 @@
                Title of File here
 ```mermaid
 %% chart2 file
-Line 5 after mermaid line
-flowchart TD 
+flowchart TD
+line6
     A[Start] --> B[Initialize n = 2]
     B --> C{Is n < 100?}
     C -- No --> G[End]
