@@ -1,7 +1,9 @@
+  Syntax does not support hierachical brackets of any kind
 ```mermaid
 flowchart TD
-    A[Start: Student reports lost item] --> B{Ask detailed questions}
-    B --> C[Collect item details (type, color, last seen, etc.)]
+
+A[Start: Student reports lost item] --> B{Ask detailed questions}
+    B --> C[Collect item details ,type, color, last seen, etc.]
     C --> D[Suggest possible locations]
     D --> E[Student checks location]
     E --> F{Was item found?}
@@ -11,6 +13,6 @@ flowchart TD
     I -- No --> D
     I -- Yes --> J{Exceeded attempt limit?}
     J -- No --> D
-    J -- Yes --> K[Notify: Item not found after multiple tries]
-    K --> L[Provide next steps (report to lost & found, etc.)]
+    J -- Yes --> K[Notify]
+    K --> L[Provide next steps, report to lost & found, etc.]
     L --> M[End: Process complete]
