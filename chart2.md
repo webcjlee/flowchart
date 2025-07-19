@@ -1,6 +1,7 @@
 
-%% chart2 file
+
 ```mermaid
+%% chart2 file
 flowchart TD 
     A[Start] --> B[Initialize n = 2]
     B --> C{Is n < 100?}
