@@ -2,8 +2,7 @@
 ```mermaid
 %% chart2 file
 flowchart TD
-line6 --> A
-    A[Start] --> B[Initialize n = 2]
+    A([Start]) --> B[Initialize n = 2]
     B --> C{Is n < 100?}
     C -- No --> G[End]
     C -- Yes --> D[Check if n is prime]
